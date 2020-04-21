@@ -5,6 +5,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using System;
+using Microsoft.AspNetCore;
 
 namespace StardewValleyAPI.API
 {
@@ -42,6 +43,7 @@ namespace StardewValleyAPI.API
             Host.CreateDefaultBuilder(args)
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
+                    WebHost.CreateDefaultBuilder(args);
                     webBuilder.UseStartup<Startup>();
                 });
     }

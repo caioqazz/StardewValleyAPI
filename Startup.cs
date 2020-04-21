@@ -7,6 +7,8 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.FileProviders;
+using System.IO;
 
 namespace StardewValleyAPI.API
 {
@@ -25,7 +27,7 @@ namespace StardewValleyAPI.API
            services.AddControllers();
              
             services.AddScoped<IStardewValleyLibraryRepository, StardewValleyLibraryRepository>();
-
+            services.AddDirectoryBrowser();
             services.AddDbContext<StardewValleyLibraryContext>(options =>
             {
                 options.UseSqlServer(
@@ -44,6 +46,13 @@ namespace StardewValleyAPI.API
             app.UseRouting();
 
             app.UseAuthorization();
+            app.UseStaticFiles();
+            app.UseStaticFiles(new StaticFileOptions
+            {
+                FileProvider = new PhysicalFileProvider(
+          Path.Combine(Directory.GetCurrentDirectory(), "images")),
+                RequestPath = "/Images"
+            });
 
             app.UseEndpoints(endpoints =>
             {

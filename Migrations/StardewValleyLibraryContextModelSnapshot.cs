@@ -39,6 +39,9 @@ namespace StardewValleyAPI.Migrations
                         .HasColumnType("nvarchar(100)")
                         .HasMaxLength(100);
 
+                    b.Property<string>("Image")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<int>("Level")
                         .HasColumnType("int");
 
@@ -72,10 +75,11 @@ namespace StardewValleyAPI.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("dc1b48df-c1da-4189-b0ff-b20fd4745025"),
+                            Id = new Guid("da2fd609-d754-4feb-8acd-c4f9ff13ba01"),
                             CriticalStrikeChance = ".02",
-                            Damage = "43953",
+                            Damage = "2-5",
                             Description = "A rusty, dull old Sword.",
+                            Image = "/images/Rusty_Sword.png",
                             Level = 1,
                             Location = "The Mines entrance",
                             Name = "Rusty Sword",
@@ -85,10 +89,11 @@ namespace StardewValleyAPI.Migrations
                         },
                         new
                         {
-                            Id = new Guid("f51ffbd1-cab7-4b44-8f15-5924e53290c4"),
+                            Id = new Guid("da2fd609-d754-4feb-8acd-c4f9ff13ba02"),
                             CriticalStrikeChance = ".02",
-                            Damage = "44015",
+                            Damage = "3-7",
                             Description = "Not bad for a piece of carved wood.",
+                            Image = "/images/Wooden_Blade.png",
                             Level = 2,
                             Location = "Adventurer s Guild",
                             Name = "Wooden Blade",
@@ -98,10 +103,11 @@ namespace StardewValleyAPI.Migrations
                         },
                         new
                         {
-                            Id = new Guid("8d8c69a4-b8af-40e3-9576-a23200b5b4c4"),
+                            Id = new Guid("da2fd609-d754-4feb-8acd-c4f9ff13ba03"),
                             CriticalStrikeChance = ".02",
-                            Damage = "44047",
+                            Damage = "4-8",
                             Description = "A standard metal blade.",
+                            Image = "/images/Steel_Smallsword.png",
                             Level = 2,
                             Location = "The Mines floor 20 chest reward",
                             Name = "Steel SmallSword",
@@ -112,10 +118,11 @@ namespace StardewValleyAPI.Migrations
                         },
                         new
                         {
-                            Id = new Guid("fdc3f253-7240-4fb0-861b-3abe43e4d9e7"),
+                            Id = new Guid("da2fd609-d754-4feb-8acd-c4f9ff13ba04"),
                             CriticalStrikeChance = ".02",
-                            Damage = "42217",
+                            Damage = "8-15",
                             Description = "Plated with silver to deter rust.",
+                            Image = "/images/Silver_Saber.png",
                             Level = 3,
                             Location = "Adventurer s Guild (after unlocking the Mines floor 20)",
                             Name = "Silver Saber",
@@ -126,10 +133,11 @@ namespace StardewValleyAPI.Migrations
                         },
                         new
                         {
-                            Id = new Guid("a3d8dfd8-82dc-485a-997c-8f853826ab00"),
+                            Id = new Guid("da2fd609-d754-4feb-8acd-c4f9ff13ba05"),
                             CriticalStrikeChance = ".02",
-                            Damage = "41852",
+                            Damage = "8-14",
                             Description = "It looks like a pirate owned this once.",
+                            Image = "/images/Pirate%27s_Sword.png",
                             Level = 4,
                             Location = "The Mines (Floors 20+)",
                             Name = "Pirate s Sword",
@@ -140,10 +148,11 @@ namespace StardewValleyAPI.Migrations
                         },
                         new
                         {
-                            Id = new Guid("0176e4bb-b117-4c4d-aa67-dd823299bb4b"),
+                            Id = new Guid("da2fd609-d754-4feb-8acd-c4f9ff13ba06"),
                             CriticalStrikeChance = ".02",
-                            Damage = "42979",
+                            Damage = "9-17",
                             Description = "A finely crafted blade.",
+                            Image = "/images/Cutlass.png",
                             Level = 4,
                             Location = "Adventurer s Guild (after unlocking the Mines floor 25)",
                             Name = "Cutlass",
@@ -154,24 +163,26 @@ namespace StardewValleyAPI.Migrations
                         },
                         new
                         {
-                            Id = new Guid("68171d9f-f8dc-4a81-9e6f-90e4caac552b"),
+                            Id = new Guid("da2fd609-d754-4feb-8acd-c4f9ff13ba07"),
                             CriticalStrikeChance = ".02",
-                            Damage = "45992",
+                            Damage = "12-25",
                             Description = "A heavy broadsword..",
+                            Image = "/images/Iron_Edge.png",
                             Level = 4,
                             Location = "The Mines (Floors 40+)",
                             Name = "Iron Edge",
                             PurchasePrice = 0,
                             SellPrice = 200,
-                            Stats = " Speed (−2), Defense (+1, Weight (+3)",
+                            Stats = " Speed (−2), Defense (+1), Weight (+3)",
                             Type = "Sword"
                         },
                         new
                         {
-                            Id = new Guid("5f62e113-257f-46e2-8575-9a10d24beee5"),
+                            Id = new Guid("da2fd609-d754-4feb-8acd-c4f9ff13ba08"),
                             CriticalStrikeChance = ".02",
-                            Damage = "43313",
+                            Damage = "8-18",
                             Description = "Made powerful by forest magic.",
+                            Image = "/images/Forest_Sword.png",
                             Level = 5,
                             Location = "The Mines (Floors 20-60)",
                             Name = "Forest Sword",
@@ -182,10 +193,11 @@ namespace StardewValleyAPI.Migrations
                         },
                         new
                         {
-                            Id = new Guid("c85027b9-4f1a-476a-9fc0-a916305f5959"),
+                            Id = new Guid("da2fd609-d754-4feb-8acd-c4f9ff13ba09"),
                             CriticalStrikeChance = ".02",
                             Damage = "18-24",
                             Description = "It feels hopeful to wield.",
+                            Image = "/images/Holy_Blade.png",
                             Level = 5,
                             Location = "The Mines (Floors 60+)",
                             Name = "Holy Blade",
@@ -196,10 +208,11 @@ namespace StardewValleyAPI.Migrations
                         },
                         new
                         {
-                            Id = new Guid("65ad031e-607a-4f12-91e1-b66724629c41"),
+                            Id = new Guid("da2fd609-d754-4feb-8acd-c4f9ff13ba10"),
                             CriticalStrikeChance = ".04",
-                            Damage = "44105",
+                            Damage = "10-20",
                             Description = "Not very pleasant to wield.",
+                            Image = "/images/Insect_Head.png",
                             Level = 6,
                             Location = "Bug drop",
                             Name = "Insect Head",
@@ -210,10 +223,11 @@ namespace StardewValleyAPI.Migrations
                         },
                         new
                         {
-                            Id = new Guid("ac68854d-c391-4dee-8ff9-d65438c9d18b"),
+                            Id = new Guid("da2fd609-d754-4feb-8acd-c4f9ff13ba11"),
                             CriticalStrikeChance = ".02",
                             Damage = "20-32",
                             Description = "It s really heavy.",
+                            Image = "/images/Claymore.png",
                             Level = 6,
                             Location = "Adventurer s Guild (after unlocking the Mines floor 45)",
                             Name = "Claymore",
@@ -224,10 +238,11 @@ namespace StardewValleyAPI.Migrations
                         },
                         new
                         {
-                            Id = new Guid("c2424f3e-89a0-4d0b-a5e9-e4c07f1a681d"),
+                            Id = new Guid("da2fd609-d754-4feb-8acd-c4f9ff13ba12"),
                             CriticalStrikeChance = "0",
                             Damage = "22-29",
                             Description = "It once belonged to an honorable knight.",
+                            Image = "/images/Templar%27s_Blade.png",
                             Level = 6,
                             Location = "Adventurer s Guild (after unlocking the Mines floor 55)",
                             Name = "Templar s Blade",
@@ -238,10 +253,11 @@ namespace StardewValleyAPI.Migrations
                         },
                         new
                         {
-                            Id = new Guid("04b92ef1-2bd4-4118-b63d-51a9e11ecf65"),
+                            Id = new Guid("da2fd609-d754-4feb-8acd-c4f9ff13ba13"),
                             CriticalStrikeChance = ".05",
                             Damage = "30-45",
                             Description = "It s glowing with vampire energy.",
+                            Image = "/images/Dark_Sword.png",
                             Level = 8,
                             Location = "Haunted Skull drop",
                             Name = "Dark Sword",
@@ -252,10 +268,11 @@ namespace StardewValleyAPI.Migrations
                         },
                         new
                         {
-                            Id = new Guid("179b9116-992d-4f89-bd94-8dd3a03d0bf9"),
+                            Id = new Guid("da2fd609-d754-4feb-8acd-c4f9ff13ba14"),
                             CriticalStrikeChance = ".02",
                             Damage = "18-35",
                             Description = "An heirloom from beyond the Gem Sea.",
+                            Image = "/images/Neptune%27s_Glaive.png",
                             Level = 7,
                             Location = "Fishing Treasure Chests (Fishing Level 2+)",
                             Name = "Neptune s Glaive",
@@ -266,10 +283,11 @@ namespace StardewValleyAPI.Migrations
                         },
                         new
                         {
-                            Id = new Guid("1f613fd0-6374-45eb-a216-6acfc53bf5de"),
+                            Id = new Guid("da2fd609-d754-4feb-8acd-c4f9ff13ba15"),
                             CriticalStrikeChance = ".02",
                             Damage = "29-44",
                             Description = "It looks like it could withstand anything.",
+                            Image = "/images/Tempered_Broadsword.png",
                             Level = 8,
                             Location = "Skull Cavern",
                             Name = "Tempered BroadSword",
@@ -280,10 +298,11 @@ namespace StardewValleyAPI.Migrations
                         },
                         new
                         {
-                            Id = new Guid("93eb5480-1158-4ab8-a7da-a043793c2cda"),
+                            Id = new Guid("da2fd609-d754-4feb-8acd-c4f9ff13ba16"),
                             CriticalStrikeChance = ".02",
                             Damage = "30-45",
                             Description = "It s incredibly sharp.",
+                            Image = "/images/Obsidian_Edge.png",
                             Level = 9,
                             Location = "The Mines floor 90 chest reward",
                             Name = "Obsidian Edge",
@@ -294,10 +313,11 @@ namespace StardewValleyAPI.Migrations
                         },
                         new
                         {
-                            Id = new Guid("4560f39a-2515-4860-9de8-a28a0ef9ac64"),
+                            Id = new Guid("da2fd609-d754-4feb-8acd-c4f9ff13ba17"),
                             CriticalStrikeChance = ".02",
                             Damage = "20-30",
                             Description = "A very light piece of sharpened bone.",
+                            Image = "/images/Bone_Sword.png",
                             Level = 10,
                             Location = "Adventurer s Guild (after unlocking the Mines floor 75)",
                             Name = "Bone Sword",
@@ -308,10 +328,11 @@ namespace StardewValleyAPI.Migrations
                         },
                         new
                         {
-                            Id = new Guid("bf1d9eb6-e893-47aa-ae49-847ff286a482"),
+                            Id = new Guid("da2fd609-d754-4feb-8acd-c4f9ff13ba18"),
                             CriticalStrikeChance = ".02",
-                            Damage = "26-38",
+                            Damage = "28-46",
                             Description = "Light and powerful.",
+                            Image = "/images/Steel_Falchion.png",
                             Level = 14,
                             Location = "Adventurer s Guild (after unlocking the Mines floor 90)",
                             Name = "Steel Falchion",
@@ -322,10 +343,11 @@ namespace StardewValleyAPI.Migrations
                         },
                         new
                         {
-                            Id = new Guid("4ddf8ba9-ac9c-4eec-9061-4cc6a95b6e81"),
+                            Id = new Guid("da2fd609-d754-4feb-8acd-c4f9ff13ba19"),
                             CriticalStrikeChance = ".015",
                             Damage = "55-64",
                             Description = "A powerful blade forged in a pool of churning lava.",
+                            Image = "/images/Lava_Katana.png",
                             Level = 15,
                             Location = "Adventurer s Guild (after unlocking the Mines floor 120)",
                             Name = "Lava Katana",
@@ -336,10 +358,11 @@ namespace StardewValleyAPI.Migrations
                         },
                         new
                         {
-                            Id = new Guid("74981378-6b4b-4593-b5f2-82988bb1310e"),
+                            Id = new Guid("da2fd609-d754-4feb-8acd-c4f9ff13ba20"),
                             CriticalStrikeChance = ".02",
                             Damage = "60-80",
                             Description = "It s unlike anything you ve ever seen.",
+                            Image = "/images/Galaxy_Sword.png",
                             Level = 26,
                             Location = "The Desert (bring a Prismatic Shard to the Three Pillars)",
                             Name = "Galaxy Sword",
@@ -350,10 +373,11 @@ namespace StardewValleyAPI.Migrations
                         },
                         new
                         {
-                            Id = new Guid("48add9d6-0e2e-4c93-8663-aca12437c88b"),
+                            Id = new Guid("da2fd609-d754-4feb-8acd-c4f9ff13ba21"),
                             CriticalStrikeChance = ".04",
-                            Damage = "43891",
+                            Damage = "1-3",
                             Description = "A small, light blade.",
+                            Image = "/images/Carving_Knife.png",
                             Level = 2,
                             Location = "The Mines (Floors 1-20)",
                             Name = "Carving Knife",
@@ -363,10 +387,11 @@ namespace StardewValleyAPI.Migrations
                         },
                         new
                         {
-                            Id = new Guid("c939a1f9-79fd-488f-8b90-949d257b52ef"),
+                            Id = new Guid("da2fd609-d754-4feb-8acd-c4f9ff13ba22"),
                             CriticalStrikeChance = ".03",
-                            Damage = "43923",
+                            Damage = "2-4",
                             Description = "A common Dagger.",
+                            Image = "/images/Iron_Dirk.png",
                             Level = 2,
                             Location = "Adventurer s Guild (after unlocking the Mines floor 15)",
                             Name = "Iron Dirk",
@@ -376,52 +401,56 @@ namespace StardewValleyAPI.Migrations
                         },
                         new
                         {
-                            Id = new Guid("7078e480-45c2-444e-8771-d9e1f6d7a0bd"),
+                            Id = new Guid("da2fd609-d754-4feb-8acd-c4f9ff13ba23"),
                             CriticalStrikeChance = ".02",
-                            Damage = "43952",
+                            Damage = "1-5",
                             Description = "A swift little blade.",
+                            Image = "/images/Wind_Spire.png",
                             Level = 3,
                             Location = "The Mines (Floors 21-40)",
                             Name = "Wind Spire",
                             PurchasePrice = 0,
                             SellPrice = 150,
-                            Stats = "Crit. Power.png Crit. Power (+10, Weight (+5)",
+                            Stats = " Crit. Power (+10), Weight (+5)",
                             Type = "Dagger"
                         },
                         new
                         {
-                            Id = new Guid("11860c22-67e6-41e5-928c-ebd141abc694"),
+                            Id = new Guid("da2fd609-d754-4feb-8acd-c4f9ff13ba24"),
                             CriticalStrikeChance = ".04",
-                            Damage = "44172",
+                            Damage = "7-12",
                             Description = "A weapon of choice for the swift and silent.",
+                            Image = "/images/Burglar%27s_Shank.png",
                             Level = 8,
                             Location = "Skull Cavern (Serpents and crates)",
                             Name = "Burglar s Shank",
                             PurchasePrice = 0,
                             SellPrice = 400,
-                            Stats = "Crit. Power.png Crit. Power (+25)",
+                            Stats = " Crit. Power (+25)",
                             Type = "Dagger"
                         },
                         new
                         {
-                            Id = new Guid("50f5e25c-30f2-4537-9381-78b29c5cb425"),
+                            Id = new Guid("da2fd609-d754-4feb-8acd-c4f9ff13ba25"),
                             CriticalStrikeChance = ".03",
-                            Damage = "44108",
+                            Damage = "4-10",
                             Description = "The blade is made of purified quartz.",
+                            Image = "/images/Crystal_Dagger.png",
                             Level = 9,
                             Location = "The Mines floor 60 chest reward",
                             Name = "Crystal Dagger",
                             PurchasePrice = 0,
                             SellPrice = 450,
-                            Stats = "Crit. Power.png Crit. Power (+50, Weight (+5)",
+                            Stats = " Crit. Power (+50, Weight (+5)",
                             Type = "Dagger"
                         },
                         new
                         {
-                            Id = new Guid("5624b274-fe25-44d1-a9d6-e42b1a4a2dd0"),
+                            Id = new Guid("da2fd609-d754-4feb-8acd-c4f9ff13ba26"),
                             CriticalStrikeChance = ".02",
                             Damage = "15-26",
                             Description = "It came from the sea, but it s still sharp.",
+                            Image = "/images/Broken_Trident.png",
                             Level = 11,
                             Location = "Fishing treasure chests",
                             Name = "Broken Trident",
@@ -431,10 +460,11 @@ namespace StardewValleyAPI.Migrations
                         },
                         new
                         {
-                            Id = new Guid("0057db11-44a9-4afc-bdd8-eb79f6ae911a"),
+                            Id = new Guid("da2fd609-d754-4feb-8acd-c4f9ff13ba27"),
                             CriticalStrikeChance = ".06",
                             Damage = "24-30",
                             Description = "The blade is made of an iridium alloy.",
+                            Image = "/images/Wicked_Kris.png",
                             Level = 15,
                             Location = "Skull Cavern crates",
                             Name = "Wicked Kris",
@@ -444,24 +474,26 @@ namespace StardewValleyAPI.Migrations
                         },
                         new
                         {
-                            Id = new Guid("e5ac5261-0f9d-420d-b081-00cc210a4883"),
+                            Id = new Guid("da2fd609-d754-4feb-8acd-c4f9ff13ba28"),
                             CriticalStrikeChance = ".02",
                             Damage = "30-40",
                             Description = "It s unlike anything you ve seen.",
+                            Image = "/images/Galaxy_Dagger.png",
                             Level = 20,
                             Location = "Adventurer s Guild (after obtaining the Galaxy Sword)",
                             Name = "Galaxy Dagger",
                             PurchasePrice = 35000,
                             SellPrice = 1000,
-                            Stats = " Speed (+1, Weight (+5)",
+                            Stats = " Speed (+1), Weight (+5)",
                             Type = "Dagger"
                         },
                         new
                         {
-                            Id = new Guid("41a2cb84-d0a5-4df7-a451-e19fa5128fd4"),
+                            Id = new Guid("da2fd609-d754-4feb-8acd-c4f9ff13ba29"),
                             CriticalStrikeChance = ".02",
-                            Damage = "06/nov",
+                            Damage = "6-11",
                             Description = "An old, heavy bone caked in centuries of grime.",
+                            Image = "/images/Femur.png",
                             Level = 1,
                             Location = "Found while digging outside the mines.",
                             Name = "Femur",
@@ -472,10 +504,11 @@ namespace StardewValleyAPI.Migrations
                         },
                         new
                         {
-                            Id = new Guid("0c8b4b60-d735-4e15-8b39-ba0bbe8f0019"),
+                            Id = new Guid("da2fd609-d754-4feb-8acd-c4f9ff13ba30"),
                             CriticalStrikeChance = ".02",
-                            Damage = "set/16",
+                            Damage = "9-16",
                             Description = "A solid piece of wood, crudely chiseled into a Club shape.",
+                            Image = "/images/Wood_Club.png",
                             Level = 2,
                             Location = "The Mines (Floors 1-39)",
                             Name = "Wood Club.",
@@ -485,10 +518,11 @@ namespace StardewValleyAPI.Migrations
                         },
                         new
                         {
-                            Id = new Guid("8968da53-53d5-4953-b09d-8682e8898335"),
+                            Id = new Guid("da2fd609-d754-4feb-8acd-c4f9ff13ba31"),
                             CriticalStrikeChance = ".02",
                             Damage = "15-24",
                             Description = "The solid head packs a punch. Relatively light for a Club.",
+                            Image = "/images/Wood_Mallet.png",
                             Level = 2,
                             Location = "The Mines (Floors 40+)",
                             Name = "Wood Mallet",
@@ -499,10 +533,11 @@ namespace StardewValleyAPI.Migrations
                         },
                         new
                         {
-                            Id = new Guid("678723d2-8571-498a-9d60-ace8063549de"),
+                            Id = new Guid("da2fd609-d754-4feb-8acd-c4f9ff13ba32"),
                             CriticalStrikeChance = ".02",
                             Damage = "18-27",
                             Description = "It s incredibly heavy.",
+                            Image = "/images/Lead_Rod.png",
                             Level = 3,
                             Location = "The Mines (Floors 40+)",
                             Name = "Lead Rod",
@@ -513,10 +548,11 @@ namespace StardewValleyAPI.Migrations
                         },
                         new
                         {
-                            Id = new Guid("c5dea295-ca95-4f19-8662-ed075940529f"),
+                            Id = new Guid("da2fd609-d754-4feb-8acd-c4f9ff13ba33"),
                             CriticalStrikeChance = ".02",
                             Damage = "40-55",
                             Description = "An extremely heavy gavel that ll send foes flying.",
+                            Image = "/images/The_Slammer.png",
                             Level = 5,
                             Location = "Skull Cavern (Floors 40+)",
                             Name = "The Slammer",
@@ -527,10 +563,11 @@ namespace StardewValleyAPI.Migrations
                         },
                         new
                         {
-                            Id = new Guid("03564d64-fa92-4dee-b7fa-accdfc19a317"),
+                            Id = new Guid("da2fd609-d754-4feb-8acd-c4f9ff13ba34"),
                             CriticalStrikeChance = ".02",
                             Damage = "70-90",
                             Description = "It s made from an ultra-light material you ve never seen before.",
+                            Image = "/images/Galaxy_Hammer.png",
                             Level = 9,
                             Location = "Adventurer s Guild (after obtaining the Galaxy Sword)",
                             Name = "Galaxy Hammer",
@@ -541,10 +578,11 @@ namespace StardewValleyAPI.Migrations
                         },
                         new
                         {
-                            Id = new Guid("20637718-28d9-40e6-84c6-31c2c57c73cb"),
+                            Id = new Guid("da2fd609-d754-4feb-8acd-c4f9ff13ba35"),
                             CriticalStrikeChance = ".02",
-                            Damage = "01/mar",
+                            Damage = "1-3",
                             Description = "The sweet spot is dented from Alex s famous Grand Slam.",
+                            Image = "/images/Alex%27s_Bat.png",
                             Level = 1,
                             Location = "Unobtainable",
                             Name = "Alex s Bat",
@@ -555,24 +593,26 @@ namespace StardewValleyAPI.Migrations
                         },
                         new
                         {
-                            Id = new Guid("3601697d-ebe4-40ea-aecc-ff63628eb8eb"),
+                            Id = new Guid("da2fd609-d754-4feb-8acd-c4f9ff13ba36"),
                             CriticalStrikeChance = ".02",
-                            Damage = "01/mar",
+                            Damage = "1-3",
                             Description = "It s seen better days.",
+                            Image = "/images/Sam%27s_Old_Guitar.png",
                             Level = 1,
                             Location = "Unobtainable",
                             Name = "Sam s Old Guitar",
                             PurchasePrice = 0,
                             SellPrice = 50,
-                            Stats = " Speed (+1, Weight (+5)",
+                            Stats = " Speed (+1), Weight (+5)",
                             Type = "Club"
                         },
                         new
                         {
-                            Id = new Guid("699cb176-163c-4648-9c9d-a9dbcc404b0f"),
+                            Id = new Guid("da2fd609-d754-4feb-8acd-c4f9ff13ba37"),
                             CriticalStrikeChance = ".04",
-                            Damage = "03/mai",
+                            Damage = "3-5",
                             Description = "Only the nimble hands of an elf could craft this.",
+                            Image = "/images/Elf_Blade.png",
                             Level = 3,
                             Location = "Unobtainable",
                             Name = "Elf Blade",
@@ -582,10 +622,11 @@ namespace StardewValleyAPI.Migrations
                         },
                         new
                         {
-                            Id = new Guid("8ea7e6d4-c0cb-4cbb-9c39-1cdd57a644af"),
+                            Id = new Guid("da2fd609-d754-4feb-8acd-c4f9ff13ba38"),
                             CriticalStrikeChance = ".02",
                             Damage = "27-40",
                             Description = "A brute s companion.",
+                            Image = "/images/Kudgel.png",
                             Level = 4,
                             Location = "Unobtainable",
                             Name = "Kudgel",
@@ -596,10 +637,11 @@ namespace StardewValleyAPI.Migrations
                         },
                         new
                         {
-                            Id = new Guid("37cf4560-9a19-4b91-a698-66c3a05eeae7"),
+                            Id = new Guid("da2fd609-d754-4feb-8acd-c4f9ff13ba39"),
                             CriticalStrikeChance = ".02",
                             Damage = "15-25",
                             Description = "An elegant blade.",
+                            Image = "/images/Rapier.png",
                             Level = 6,
                             Location = "Unobtainable",
                             Name = "Rapier",
@@ -610,10 +652,11 @@ namespace StardewValleyAPI.Migrations
                         },
                         new
                         {
-                            Id = new Guid("6aa33dcb-e212-47e4-b2d5-200a3ae7c568"),
+                            Id = new Guid("da2fd609-d754-4feb-8acd-c4f9ff13ba40"),
                             CriticalStrikeChance = ".02",
-                            Damage = "01/mar",
+                            Damage = "1-3",
                             Description = "It brings back memories of Harvey s clinic.",
+                            Image = "/images/Harvey%27s_Mallet.png",
                             Level = 7,
                             Location = "Unobtainable",
                             Name = "Harvey s Mallet",
@@ -624,10 +667,11 @@ namespace StardewValleyAPI.Migrations
                         },
                         new
                         {
-                            Id = new Guid("96996b28-232d-4cbf-8d35-122de0a4b014"),
+                            Id = new Guid("da2fd609-d754-4feb-8acd-c4f9ff13ba41"),
                             CriticalStrikeChance = ".02",
-                            Damage = "01/mar",
+                            Damage = "1-3",
                             Description = "A big, metal wrench. It smells like Maru.",
+                            Image = "/images/Maru%27s_Wrench.png",
                             Level = 7,
                             Location = "Unobtainable",
                             Name = "Maru s Wrench",
@@ -638,10 +682,11 @@ namespace StardewValleyAPI.Migrations
                         },
                         new
                         {
-                            Id = new Guid("60b97bfd-1716-4a44-b4a5-162f6a441c14"),
+                            Id = new Guid("da2fd609-d754-4feb-8acd-c4f9ff13ba42"),
                             CriticalStrikeChance = ".02",
-                            Damage = "01/mar",
+                            Damage = "1-3",
                             Description = "Penny s favorite frying pan. There s some rubbery gunk stuck to the inside.",
+                            Image = "/images/Penny%27s_Fryer.png",
                             Level = 7,
                             Location = "Unobtainable",
                             Name = "Penny s Fryer",
@@ -652,10 +697,11 @@ namespace StardewValleyAPI.Migrations
                         },
                         new
                         {
-                            Id = new Guid("f9ccbff5-4e75-41d8-b856-929e814c0a85"),
+                            Id = new Guid("da2fd609-d754-4feb-8acd-c4f9ff13ba43"),
                             CriticalStrikeChance = ".02",
-                            Damage = "01/mar",
+                            Damage = "1-3",
                             Description = "One of Sebastian s medieval replicas.",
+                            Image = "/images/Seb%27s_Lost_Mace.png",
                             Level = 7,
                             Location = "Unobtainable",
                             Name = "Seb s Lost Mace",
@@ -666,10 +712,11 @@ namespace StardewValleyAPI.Migrations
                         },
                         new
                         {
-                            Id = new Guid("7cd589c5-1aab-42d1-a0ff-21322afde4f4"),
+                            Id = new Guid("da2fd609-d754-4feb-8acd-c4f9ff13ba44"),
                             CriticalStrikeChance = ".04",
-                            Damage = "out/20",
+                            Damage = "10-20",
                             Description = "When you hold the blade to your ear you can hear 1000 souls shrieking.",
+                            Image = "/images/Shadow_Dagger.png",
                             Level = 8,
                             Location = "Unobtainable",
                             Name = "Shadow Dagger.",
@@ -679,10 +726,11 @@ namespace StardewValleyAPI.Migrations
                         },
                         new
                         {
-                            Id = new Guid("bc327d42-5aae-4dcf-b6fe-0e84e4e5f7a6"),
+                            Id = new Guid("da2fd609-d754-4feb-8acd-c4f9ff13ba45"),
                             CriticalStrikeChance = ".02",
                             Damage = "26-42",
                             Description = "It s icy cold to the touch.",
+                            Image = "/images/Yeti_Tooth.png",
                             Level = 9,
                             Location = "Unobtainable",
                             Name = "Yeti Tooth",
@@ -693,10 +741,11 @@ namespace StardewValleyAPI.Migrations
                         },
                         new
                         {
-                            Id = new Guid("3a33488f-d877-48b3-a229-8ff2a07f5ca8"),
+                            Id = new Guid("da2fd609-d754-4feb-8acd-c4f9ff13ba46"),
                             CriticalStrikeChance = ".02",
-                            Damage = "01/mar",
+                            Damage = "1-3",
                             Description = "It s searing hot and smells like Haley s hair.",
+                            Image = "/images/Haley%27s_Iron.png",
                             Level = 13,
                             Location = "Unobtainable",
                             Name = "Haley s Iron",
@@ -707,10 +756,11 @@ namespace StardewValleyAPI.Migrations
                         },
                         new
                         {
-                            Id = new Guid("7bc928ce-903e-441e-be1d-5a1ef413fcc9"),
+                            Id = new Guid("da2fd609-d754-4feb-8acd-c4f9ff13ba47"),
                             CriticalStrikeChance = ".02",
-                            Damage = "01/mar",
+                            Damage = "1-3",
                             Description = "It s made from fine marblewood.",
+                            Image = "/images/Abby%27s_Planchette.png",
                             Level = 14,
                             Location = "Unobtainable",
                             Name = "Abby s Planchette",
@@ -721,10 +771,11 @@ namespace StardewValleyAPI.Migrations
                         },
                         new
                         {
-                            Id = new Guid("7d044764-0ec3-4741-ac93-2725979feccf"),
+                            Id = new Guid("da2fd609-d754-4feb-8acd-c4f9ff13ba48"),
                             CriticalStrikeChance = ".02",
-                            Damage = "01/mar",
+                            Damage = "1-3",
                             Description = "Elliott used this to write his book. It s sharp!",
+                            Image = "/images/Elliott%27s_Pencil.png",
                             Level = 14,
                             Location = "Unobtainable",
                             Name = "Elliott s Pencil",
@@ -735,10 +786,11 @@ namespace StardewValleyAPI.Migrations
                         },
                         new
                         {
-                            Id = new Guid("dd4fcb78-b4a1-401b-a39f-54231431e0f8"),
+                            Id = new Guid("da2fd609-d754-4feb-8acd-c4f9ff13ba49"),
                             CriticalStrikeChance = ".02",
-                            Damage = "01/mar",
+                            Damage = "1-3",
                             Description = "Leah s favorite tool for shaping driftwood.",
+                            Image = "/images/Leah%27s_Whittler.png",
                             Level = 14,
                             Location = "Unobtainable",
                             Name = "Leah s Whittler",
@@ -749,13 +801,42 @@ namespace StardewValleyAPI.Migrations
                         },
                         new
                         {
-                            Id = new Guid("31f5f91f-8c03-4ddc-988e-60425260a8ad"),
+                            Id = new Guid("da2fd609-d754-4feb-8acd-c4f9ff13ba50"),
                             CriticalStrikeChance = ".02",
-                            Damage = "≈4x that of a regular WeaponType.Slingshot.ToString() using the same ammo",
+                            Damage = "≈4x that of a regular Slingshot using the same ammo",
                             Description = "It looks really powerful.",
+                            Image = "/images/Galaxy_Slingshot.png",
                             Level = 0,
                             Location = "Unobtainable",
                             Name = "Galaxy Slingshot",
+                            PurchasePrice = 0,
+                            SellPrice = 0,
+                            Type = "Slingshot"
+                        },
+                        new
+                        {
+                            Id = new Guid("da2fd609-d754-4feb-8acd-c4f9ff13ba51"),
+                            CriticalStrikeChance = ".02",
+                            Damage = "Depends on ammo used",
+                            Description = "Requires stones for ammo.",
+                            Image = "/images/Slingshot.png",
+                            Level = 0,
+                            Location = "The Mines (Floor 40 chest reward)",
+                            Name = "Slingshot",
+                            PurchasePrice = 0,
+                            SellPrice = 0,
+                            Type = "Slingshot"
+                        },
+                        new
+                        {
+                            Id = new Guid("da2fd609-d754-4feb-8acd-c4f9ff13ba52"),
+                            CriticalStrikeChance = ".02",
+                            Damage = "Depends on ammo used",
+                            Description = "Requires stones for ammo.",
+                            Image = "/images/Master_Slingshot.png",
+                            Level = 0,
+                            Location = "The Mines (Floor 70 chest reward)",
+                            Name = "Master Slingshot",
                             PurchasePrice = 0,
                             SellPrice = 0,
                             Type = "Slingshot"
